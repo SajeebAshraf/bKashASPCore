@@ -1,0 +1,17 @@
+﻿<script src="~/bKashApi.js"></script>
+<button id="bKash_button" class="btn btn-danger">Pay With bKash</button>
+
+<br />
+<div>Account: 01929918378</div>
+<div>OTP: 123456</div>
+<div>PIN: 12121</div>
+
+
+<script>
+    $("#bKash_button").bKash({amount:150,merchantInvoiceNumber:"A-1025"});
+    //$("#bKash_button").bKash({amount:150,merchantInvoiceNumber:"A-1025",isProduction:true});
+    //$("#bKash_button").bKash({amount:150},function(status,data){
+    //    alert(status+":"+JSON.stringify(data));
+    //    location.reload();
+    //});
+</script>
